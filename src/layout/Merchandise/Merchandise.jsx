@@ -1,12 +1,13 @@
 import { nanoid } from "nanoid";
-import { ButtonSmall } from "../../components/Button.styled";
 import {
+  MerchandiseButton,
   MerchandiseContainer,
   MerchandiseDescription,
   MerchandiseElem,
   MerchandiseImg,
   MerchandiseList,
   MerchandiseText,
+  MerchandiseTextWrapper,
 } from "./Merchandise.styled";
 import {
   desktopMerchandise1,
@@ -28,7 +29,7 @@ export default function Merchandise() {
         "особенность товара 2",
         "особенность товара 3",
       ],
-      price: "100000",
+      price: "10000",
     },
     {
       desktopImg: desktopMerchandise2,
@@ -39,7 +40,7 @@ export default function Merchandise() {
         "особенность товара 2",
         "особенность товара 3",
       ],
-      price: "100000",
+      price: "10000",
     },
     {
       desktopImg: desktopMerchandise3,
@@ -50,7 +51,7 @@ export default function Merchandise() {
         "особенность товара 2",
         "особенность товара 3",
       ],
-      price: "100000",
+      price: "10000",
     },
     {
       desktopImg: desktopMerchandise4,
@@ -61,7 +62,7 @@ export default function Merchandise() {
         "особенность товара 2",
         "особенность товара 3",
       ],
-      price: "100000",
+      price: "10000",
     },
     {
       desktopImg: desktopMerchandise5,
@@ -72,7 +73,7 @@ export default function Merchandise() {
         "особенность товара 2",
         "особенность товара 3",
       ],
-      price: "100000",
+      price: "10000",
     },
     {
       desktopImg: desktopMerchandise6,
@@ -83,7 +84,7 @@ export default function Merchandise() {
         "особенность товара 2",
         "особенность товара 3",
       ],
-      price: "100000",
+      price: "10000",
     },
   ];
   return (
@@ -98,8 +99,10 @@ export default function Merchandise() {
                 {description}
               </MerchandiseDescription>
             ))}
-            <MerchandiseText>{elem.price}</MerchandiseText>
-            <ButtonSmall>Заказать</ButtonSmall>
+            <MerchandiseTextWrapper>
+              <MerchandiseText>от {elem.price} руб.</MerchandiseText>
+              <MerchandiseButton>Заказать</MerchandiseButton>
+            </MerchandiseTextWrapper>
           </MerchandiseElem>
         ))}
       </MerchandiseList>

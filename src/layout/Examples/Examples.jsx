@@ -1,6 +1,7 @@
 import {
   ExamplesButton,
   ExamplesContainer,
+  ExamplesDescription,
   ExamplesElem,
   ExamplesImg,
   ExamplesList,
@@ -19,9 +20,21 @@ import { nanoid } from "nanoid";
 
 export default function Examples() {
   const examplesList = [
-    { desktopImg: desktopExample1, mobileImg: mobileExample1, text: "" },
-    { desktopImg: desktopExample2, mobileImg: mobileExample2, text: "" },
-    { desktopImg: desktopExample3, mobileImg: mobileExample3, text: "" },
+    {
+      desktopImg: desktopExample1,
+      mobileImg: mobileExample1,
+      text: "Махровые халаты",
+    },
+    {
+      desktopImg: desktopExample2,
+      mobileImg: mobileExample2,
+      text: "Махровые полотенца",
+    },
+    {
+      desktopImg: desktopExample3,
+      mobileImg: mobileExample3,
+      text: "коврики для ног",
+    },
   ];
   return (
     <ExamplesContainer>
@@ -42,8 +55,10 @@ export default function Examples() {
               />
               <img srcSet={elem.desktopImg} alt={elem.text} />
             </ExamplesImg>
-            <ExamplesText>{elem.text}</ExamplesText>
-            <ExamplesButton>Заказать</ExamplesButton>
+            <ExamplesDescription>
+              <ExamplesText>{elem.text}</ExamplesText>
+              <ExamplesButton>Заказать</ExamplesButton>
+            </ExamplesDescription>
           </ExamplesElem>
         ))}
       </ExamplesList>

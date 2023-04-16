@@ -44,6 +44,17 @@ import mobileProduction3 from "../img/mobile/production-3.png";
 import mobileProduction4 from "../img/mobile/production-4.png";
 import desktopFounder from "../img/desktop/founder.png";
 import mobileFounder from "../img/mobile/founder.png";
+import clock from "../img/svg/clock.svg";
+import group from "../img/svg/group.svg";
+import box from "../img/svg/box.svg";
+import robe from "../img/svg/robe.svg";
+import medal from "../img/svg/medal.svg";
+import desktopHero1 from "../img/desktop/hero-1.png";
+import desktopHero2 from "../img/desktop/hero-2.png";
+import mobileHero1 from "../img/mobile/hero-1.png";
+import mobileHero2 from "../img/mobile/hero-2.png";
+import desktopFreesamples from "../img/desktop/free-sample.png";
+import mobileFreesamples from "../img/mobile/free-samples.png";
 
 export {
   desktopExample1,
@@ -102,3 +113,9 @@ export {
 };
 
 export { desktopFounder, mobileFounder };
+
+export { clock, group, box, robe, medal };
+
+export { desktopHero1, desktopHero2, mobileHero1, mobileHero2 };
+
+export { desktopFreesamples, mobileFreesamples };

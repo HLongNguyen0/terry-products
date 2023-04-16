@@ -10,7 +10,7 @@ body {
     font-style: normal;
 }
 a {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: inherit;
 }
@@ -37,6 +37,7 @@ ul {
 }
 img {
     display: block;
+    width: 100%;
 }
 address {
     font-style: normal;
