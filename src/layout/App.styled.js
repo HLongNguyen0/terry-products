@@ -1,12 +1,16 @@
 import { createGlobalStyle } from "styled-components";
-import { size } from "../utils/break-points";
 
 const GlobalStyle = createGlobalStyle`
-body {
+* {
     box-sizing: border-box;
+
+}
+body {
+    font-family: "Open Sans";
+    font-style: normal;
 }
 a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -26,6 +30,7 @@ p {
 }
 ol,
 ul {
+    list-style: none;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -35,12 +40,6 @@ img {
 }
 address {
     font-style: normal;
-}
-section {
-    /* width: ${size.mobile};
-    margin: 0 auto;
-    padding: 0 33px;
-     */
 }
 `;
 

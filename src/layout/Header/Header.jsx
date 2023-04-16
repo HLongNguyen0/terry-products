@@ -2,19 +2,20 @@ import {
   HeaderContainer,
   HeaderLogo,
   HeaderPhoneCall,
+  HeaderPhoneCallImg,
   HeaderPhoneContainer,
   HeaderPhoneNumber,
 } from "./Header.styled";
-import logo from "../../img/desktop/logo.png";
+import phone from "../../img/svg/phone.svg";
 
 export default function Header() {
   return (
     <HeaderContainer>
-      <HeaderLogo src={logo} />
+      <HeaderLogo />
       <HeaderPhoneContainer>
         <HeaderPhoneNumber>8 800 222 10 24</HeaderPhoneNumber>
         <HeaderPhoneCall href="tel:88002221024">
-          Заказать звонок
+          Заказать звонок <HeaderPhoneCallImg src={phone} />
         </HeaderPhoneCall>
       </HeaderPhoneContainer>
     </HeaderContainer>
