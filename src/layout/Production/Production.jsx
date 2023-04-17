@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import {
   Founder,
+  FounderDecor,
   FounderDescription,
   FounderImg,
   FounderInfo,
@@ -16,11 +17,9 @@ import {
   desktopProduction1,
   desktopProduction2,
   desktopProduction3,
-  desktopProduction4,
   mobileProduction1,
   mobileProduction2,
   mobileProduction3,
-  mobileProduction4,
 } from "../../img";
 import { desktopFounder, mobileFounder } from "../../img";
 
@@ -29,7 +28,6 @@ export default function Production() {
     { desktopImg: desktopProduction1, mobileImg: mobileProduction1 },
     { desktopImg: desktopProduction2, mobileImg: mobileProduction2 },
     { desktopImg: desktopProduction3, mobileImg: mobileProduction3 },
-    { desktopImg: desktopProduction4, mobileImg: mobileProduction4 },
   ];
   return (
     <ProductionContainer>
@@ -68,6 +66,7 @@ export default function Production() {
           <img srcSet={desktopFounder} alt="founder" />
         </FounderImg>
         <FounderInfo>
+          <FounderDecor>„</FounderDecor>
           <FounderText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea est
             diam quisque dignissim. Amet, quisque risus, ullamcorper ultrices

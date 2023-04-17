@@ -13,16 +13,17 @@ import {
   GuaranteeTitleDescription,
   GuaranteeTitleWraper,
 } from "./Guarantee.styled";
+import { check, box2, people, banner } from "../../img";
 
 export default function Guarantee() {
   const guaranteeList = [
-    { img: "", text: "Вся наша продукция сертифицирована" },
+    { img: check, text: "Вся наша продукция сертифицирована" },
     {
-      img: "",
+      img: box2,
       text: "Мы более 11 лет являемся надёжным поставщиком HoReCa России и СНГ",
     },
-    { img: "", text: "Индивидуально подходим к каждому клиенту" },
-    { img: "", text: "Вся продукция имеет маркировку Честный Знак" },
+    { img: people, text: "Индивидуально подходим к каждому клиенту" },
+    { img: banner, text: "Вся продукция имеет маркировку Честный Знак" },
   ];
   return (
     <GuaranteeContainer>
@@ -37,7 +38,7 @@ export default function Guarantee() {
         <GuaranteeList>
           {guaranteeList.map((elem) => (
             <GuaranteeElem key={nanoid()}>
-              <GuaranteeElemImg />
+              <GuaranteeElemImg src={elem.img} />
               <GuaranteeElemText>{elem.text}</GuaranteeElemText>
             </GuaranteeElem>
           ))}

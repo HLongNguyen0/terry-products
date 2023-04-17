@@ -2,16 +2,17 @@ import styled from "styled-components";
 import desktopLogo from "../img/desktop/logo.png";
 import mobileLogo from "../img/mobile/logo.png";
 
-export const LogoWrapper = styled.a``;
-
-export const LogoImg = styled.picture`
-  display: block;
-  width: 135px;
+export const LogoWrapper = styled.a`
+  width: ${(props) => props.width};
 `;
 
-export default function Logo() {
+export const LogoImg = styled.picture`
+  width: 100%;
+`;
+
+export default function Logo({ width = 135 }) {
   return (
-    <LogoWrapper>
+    <LogoWrapper width={`${width}px`}>
       <LogoImg>
         <source
           srcSet={desktopLogo}

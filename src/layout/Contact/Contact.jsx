@@ -5,9 +5,9 @@ import {
   ContactTitle,
 } from "./Contact.styled";
 
-export default function Contact() {
+export default function Contact({ desktopImg, mobileImg }) {
   return (
-    <ContactContainer>
+    <ContactContainer desktopImg={desktopImg} mobileImg={mobileImg}>
       <ContactTitle>
         Закажите махровые изделия для комфорта ваших гостей
       </ContactTitle>

@@ -10,6 +10,16 @@ import Hero from "./Hero/Hero";
 import Merchandise from "./Merchandise/Merchandise";
 import Partners from "./Partners/Partners";
 import Production from "./Production/Production";
+import {
+  desktopContact1,
+  desktopContact2,
+  desktopContact3,
+  desktopContact4,
+  mobileContact1,
+  mobileContact2,
+  mobileContact3,
+  mobileContact4,
+} from "../img";
 
 function App() {
   return (
@@ -21,11 +31,17 @@ function App() {
       <Merchandise />
       <ContactLogotype />
       <Guarantee />
-      <Contact />
+      <Contact
+        desktopImg={[desktopContact1, desktopContact2]}
+        mobileImg={[mobileContact1, mobileContact2]}
+      />
       <Feedback />
       <Partners />
       <Production />
-      <Contact />
+      <Contact
+        desktopImg={[desktopContact3, desktopContact4]}
+        mobileImg={[mobileContact3, mobileContact4]}
+      />
       <Footer />
     </>
   );

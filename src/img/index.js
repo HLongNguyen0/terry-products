@@ -31,17 +31,15 @@ import mobilePartners6 from "../img/mobile/partners-6.png";
 import mobilePartners7 from "../img/mobile/partners-7.png";
 import mobilePartners8 from "../img/mobile/partners-8.png";
 import mobilePartners9 from "../img/mobile/partners-9.png";
-import mobilePartners10 from "../img/desktop/partners-10.png";
-import mobilePartners11 from "../img/mobile/partners-10.png";
-import mobilePartners12 from "../img/mobile/partners-11.png";
+import mobilePartners10 from "../img/mobile/partners-10.png";
+import mobilePartners11 from "../img/mobile/partners-11.png";
+import mobilePartners12 from "../img/mobile/partners-12.png";
 import desktopProduction1 from "../img/desktop/production-1.png";
 import desktopProduction2 from "../img/desktop/production-2.png";
 import desktopProduction3 from "../img/desktop/production-3.png";
-import desktopProduction4 from "../img/desktop/production-4.png";
 import mobileProduction1 from "../img/mobile/production-1.png";
 import mobileProduction2 from "../img/mobile/production-2.png";
 import mobileProduction3 from "../img/mobile/production-3.png";
-import mobileProduction4 from "../img/mobile/production-4.png";
 import desktopFounder from "../img/desktop/founder.png";
 import mobileFounder from "../img/mobile/founder.png";
 import clock from "../img/svg/clock.svg";
@@ -55,6 +53,25 @@ import mobileHero1 from "../img/mobile/hero-1.png";
 import mobileHero2 from "../img/mobile/hero-2.png";
 import desktopFreesamples from "../img/desktop/free-sample.png";
 import mobileFreesamples from "../img/mobile/free-samples.png";
+import desktopContactLogo from "../img/desktop/contact-logotype.png";
+import mobileContactLogo from "../img/mobile/contact-logotype.png";
+import check from "../img/svg/check.svg";
+import box2 from "../img/svg/box2.svg";
+import people from "../img/svg/people.svg";
+import banner from "../img/svg/banner.svg";
+import desktopContact1 from "../img/desktop/contact-products-1.png";
+import desktopContact2 from "../img/desktop/contact-products-2.png";
+import desktopContact3 from "../img/desktop/contact-1.png";
+import desktopContact4 from "../img/desktop/contact-2.png";
+import mobileContact1 from "../img/mobile/contact-products-1.png";
+import mobileContact2 from "../img/mobile/contact-products-2.png";
+import mobileContact3 from "../img/mobile/contact-1.png";
+import mobileContact4 from "../img/mobile/contact-2.png";
+import arrowLeft from "../img/desktop/arrow-left.png";
+import arrowRight from "../img/desktop/arrow-right.png";
+import inn from "../img/svg/in.svg";
+import fb from "../img/svg/fb.svg";
+import wtf from "../img/svg/wtf.svg";
 
 export {
   desktopExample1,
@@ -105,11 +122,9 @@ export {
   desktopProduction1,
   desktopProduction2,
   desktopProduction3,
-  desktopProduction4,
   mobileProduction1,
   mobileProduction2,
   mobileProduction3,
-  mobileProduction4,
 };
 
 export { desktopFounder, mobileFounder };
@@ -119,3 +134,22 @@ export { clock, group, box, robe, medal };
 export { desktopHero1, desktopHero2, mobileHero1, mobileHero2 };
 
 export { desktopFreesamples, mobileFreesamples };
+
+export { desktopContactLogo, mobileContactLogo };
+
+export { check, box2, people, banner };
+
+export {
+  desktopContact1,
+  desktopContact2,
+  desktopContact3,
+  desktopContact4,
+  mobileContact1,
+  mobileContact2,
+  mobileContact3,
+  mobileContact4,
+};
+
+export { arrowLeft, arrowRight };
+
+export { inn, fb, wtf };
