@@ -34,6 +34,8 @@ function App() {
       <Contact
         desktopImg={[desktopContact1, desktopContact2]}
         mobileImg={[mobileContact1, mobileContact2]}
+        formPossition="center"
+        bgImgPossition={["top", "bottom"]}
       />
       <Feedback />
       <Partners />
@@ -41,6 +43,8 @@ function App() {
       <Contact
         desktopImg={[desktopContact3, desktopContact4]}
         mobileImg={[mobileContact3, mobileContact4]}
+        formPossition="center"
+        bgImgPossition={["bottom", "top"]}
       />
       <Footer />
     </>

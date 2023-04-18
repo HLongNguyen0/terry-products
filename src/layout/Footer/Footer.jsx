@@ -13,11 +13,9 @@ export default function Footer() {
   const socialmedia = [inn, fb, wtf];
   return (
     <FooterContainer>
-      <FooterLogo width={84} />
-      <FooterText>
-        <span>Политика конфиденциальности</span>
-        <span>Согласие на рассылку</span>
-      </FooterText>
+      <FooterLogo desktop="265px" mobile="83px" />
+      <FooterText>Политика конфиденциальности</FooterText>
+      <FooterText>Согласие на рассылку</FooterText>
       <FooterSMedia>
         {socialmedia.map((img) => (
           <FooterSMediaElem key={nanoid()}>

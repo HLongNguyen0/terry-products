@@ -11,11 +11,11 @@ import phone from "../../img/svg/phone.svg";
 export default function Header() {
   return (
     <HeaderContainer>
-      <HeaderLogo />
+      <HeaderLogo desktop="265px" mobile="135px" />
       <HeaderPhoneContainer>
         <HeaderPhoneNumber>8 800 222 10 24</HeaderPhoneNumber>
         <HeaderPhoneCall href="tel:88002221024">
-          Заказать звонок <HeaderPhoneCallImg src={phone} />
+          <span>Заказать звонок</span> <HeaderPhoneCallImg src={phone} />
         </HeaderPhoneCall>
       </HeaderPhoneContainer>
     </HeaderContainer>

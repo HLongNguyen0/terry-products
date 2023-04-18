@@ -1,13 +1,23 @@
 import styled from "styled-components";
-import { Section } from "../../components/Section.styled";
+import { Section } from "../../components/Container.styled";
 import { palette } from "../../utils/palette";
-import { ButtonMedium } from "../../components/Button.styled";
+import { ButtonSmall } from "../../components/Button.styled";
+import { size } from "../../utils/break-points";
 
 export const MerchandiseContainer = styled(Section)`
   padding: 120px 34px;
+  @media (min-width: ${size.desktop}) {
+    padding: 200px 20px;
+  }
 `;
 
-export const MerchandiseList = styled.ul``;
+export const MerchandiseList = styled.ul`
+  @media (min-width: ${size.desktop}) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+`;
 
 export const MerchandiseElem = styled.li`
   background-color: ${palette.lightGray};
@@ -15,9 +25,13 @@ export const MerchandiseElem = styled.li`
   &:not(:last-child) {
     margin-bottom: 8px;
   }
+  @media (min-width: ${size.desktop}) {
+    width: 360px;
+  }
 `;
 
 export const MerchandiseImg = styled.img`
+  height: 340px;
   margin-bottom: 12px;
 `;
 
@@ -28,6 +42,9 @@ export const MerchandiseDescription = styled.p`
   letter-spacing: 0.15px;
   text-transform: uppercase;
   color: ${palette.gray};
+  @media (min-width: ${size.desktop}) {
+    margin-top: 4px;
+  }
 `;
 
 export const MerchandiseTextWrapper = styled.div`
@@ -44,8 +61,17 @@ export const MerchandiseText = styled.span`
   letter-spacing: 0.15px;
   text-transform: uppercase;
   color: ${palette.orange};
+  @media (min-width: ${size.desktop}) {
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.15px;
+  }
 `;
 
-export const MerchandiseButton = styled(ButtonMedium)`
+export const MerchandiseButton = styled(ButtonSmall)`
   width: 140px;
+  padding: 12px 36px;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.27px;
 `;

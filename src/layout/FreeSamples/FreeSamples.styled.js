@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import { Section } from "../../components/Section.styled";
+import { Section } from "../../components/Container.styled";
 import { ButtonMedium } from "../../components/Button.styled";
-import {
-  //   desktopFreesamples,
-  mobileFreesamples,
-} from "../../img";
+import { desktopFreesamples, mobileFreesamples } from "../../img";
 import { palette } from "../../utils/palette";
+import { size } from "../../utils/break-points";
 
 export const FreeSamplesContainer = styled(Section)`
   background-image: linear-gradient(
@@ -13,7 +11,16 @@ export const FreeSamplesContainer = styled(Section)`
       rgba(32, 31, 31, 0.7)
     ),
     url(${mobileFreesamples});
-  padding: 60px 40px;
+  background-position: center;
+  padding: 60px 34px;
+  @media (min-width: ${size.desktop}) {
+    background-image: linear-gradient(
+        rgba(32, 31, 31, 0.7),
+        rgba(32, 31, 31, 0.7)
+      ),
+      url(${desktopFreesamples});
+    padding: 88px 20px;
+  }
 `;
 
 export const FreeSamplesTitle = styled.h2`
@@ -28,6 +35,13 @@ export const FreeSamplesTitle = styled.h2`
   & span {
     color: ${palette.yellow};
   }
+  @media (min-width: ${size.desktop}) {
+    width: 700px;
+    margin: 0 auto 24px;
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: 0.2px;
+  }
 `;
 
 export const FreeSamplesText = styled.p`
@@ -39,10 +53,20 @@ export const FreeSamplesText = styled.p`
   letter-spacing: 0.08px;
   text-transform: uppercase;
   color: #fff;
+  @media (min-width: ${size.desktop}) {
+    margin-bottom: 64px;
+    font-size: 23px;
+    line-height: 31px;
+    letter-spacing: 0.2px;
+  }
 `;
 
 export const FreeSamplesButton = styled(ButtonMedium)`
   display: block;
   background-color: ${palette.lightOragne};
+  width: fit-content;
   margin: 0 auto;
+  @media (min-width: ${size.desktop}) {
+    padding: 24px 64px;
+  }
 `;

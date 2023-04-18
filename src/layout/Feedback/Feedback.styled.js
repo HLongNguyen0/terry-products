@@ -1,10 +1,14 @@
 import styled from "styled-components";
-import { Section } from "../../components/Section.styled";
+import { Section } from "../../components/Container.styled";
 import { palette } from "../../utils/palette";
+import { size } from "../../utils/break-points";
 
 export const FeedbackContainer = styled(Section)`
-  padding-top: 104px;
+  padding-top: 100px;
   overflow: hidden;
+  @media (min-width: ${size.desktop}) {
+    padding-top: 120px;
+  }
 `;
 
 export const FeedbackTitle = styled.h2`
@@ -16,22 +20,33 @@ export const FeedbackTitle = styled.h2`
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: ${palette.orange};
+  @media (min-width: ${size.desktop}) {
+    margin-bottom: 80px;
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: 0.2px;
+  }
 `;
 
 export const FeedbackList = styled.ul`
   display: flex;
-  transform: translate(${(props) => props.cardSlide}, 0);
+  transform: translateX(${(props) => props.cardSlide});
   margin-bottom: 8px;
+  @media (min-width: ${size.desktop}) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const FeedbackElem = styled.li`
   position: relative;
   background-color: ${palette.lightGray};
   border: 2px solid ${palette.orange};
-  /* margin-bottom: 16px; */
   padding: 44px 30px 40px;
   &:not(:last-child) {
     margin-right: 40px;
+  }
+  @media (min-width: ${size.desktop}) {
+    width: 560px;
   }
 `;
 
@@ -46,6 +61,12 @@ export const FeedbackDecor = styled.div`
   line-height: 126px;
   text-transform: uppercase;
   color: ${palette.orange};
+  @media (min-width: ${size.desktop}) {
+    top: -155px;
+    font-size: 171px;
+    line-height: 195px;
+    letter-spacing: 0.76px;
+  }
 `;
 
 export const FeedbackRating = styled.div`
@@ -74,6 +95,11 @@ export const FeedbackText = styled.p`
   text-align: center;
   letter-spacing: 0.16px;
   color: ${palette.black};
+  @media (min-width: ${size.desktop}) {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.25px;
+  }
 `;
 
 export const FeedbackImg = styled.img`
@@ -82,6 +108,10 @@ export const FeedbackImg = styled.img`
   height: 26px;
   border-radius: 50%;
   margin: 0 auto 6px;
+  @media (min-width: ${size.desktop}) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const FeedbackName = styled.span`
@@ -94,6 +124,11 @@ export const FeedbackName = styled.span`
   letter-spacing: 0.13px;
   text-transform: capitalize;
   color: ${palette.gray};
+  @media (min-width: ${size.desktop}) {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+  }
 `;
 
 export const FeedbackButtonWrapper = styled.div`
@@ -101,6 +136,9 @@ export const FeedbackButtonWrapper = styled.div`
   justify-content: space-between;
   width: 100px;
   margin: 0 auto;
+  @media (min-width: ${size.desktop}) {
+    width: 160px;
+  }
 `;
 
 export const FeedbackButton = styled.button``;
@@ -108,4 +146,7 @@ export const FeedbackButton = styled.button``;
 export const FeedbackButtonImg = styled.img`
   background-color: white;
   width: 40px;
+  @media (min-width: ${size.desktop}) {
+    width: 72px;
+  }
 `;

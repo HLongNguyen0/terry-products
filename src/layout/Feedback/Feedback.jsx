@@ -63,6 +63,12 @@ export default function Feedback() {
       img: feedbackImg,
       name: "Customer's name 4",
     },
+    {
+      rating: 5,
+      text: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      img: feedbackImg,
+      name: "Customer's name 5",
+    },
   ];
   return (
     <FeedbackContainer>
