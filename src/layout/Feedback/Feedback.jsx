@@ -24,12 +24,32 @@ export default function Feedback() {
   const handleSlide = (direction) => {
     switch (direction) {
       case "left":
-        if (cardSlide > 0) {
+        if (
+          (cardSlide > 0) &
+          window.matchMedia("(min-width: 1200px)").matches
+        ) {
+          setCardSlide((state) => state - 1);
+          break;
+        }
+        if (
+          (cardSlide > 0) &
+          window.matchMedia("(max-width: 1199px)").matches
+        ) {
           setCardSlide((state) => state - 1);
         }
         break;
       case "right":
-        if (cardSlide < feedbackList.length - 1) {
+        if (
+          (cardSlide < Math.floor(feedbackList.length / 3)) &
+          window.matchMedia("(min-width: 1200px)").matches
+        ) {
+          setCardSlide((state) => state + 1);
+          break;
+        }
+        if (
+          (cardSlide < feedbackList.length - 1) &
+          window.matchMedia("(max-width: 1199px)").matches
+        ) {
           setCardSlide((state) => state + 1);
         }
         break;
@@ -69,7 +89,38 @@ export default function Feedback() {
       img: feedbackImg,
       name: "Customer's name 5",
     },
+    {
+      rating: 5,
+      text: "“Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”",
+      img: feedbackImg,
+      name: "Customer's name 1",
+    },
+    {
+      rating: 3,
+      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum!",
+      img: feedbackImg,
+      name: "Customer's name 2",
+    },
+    {
+      rating: 4,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      img: feedbackImg,
+      name: "Customer's name 3",
+    },
+    {
+      rating: 2,
+      text: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      img: feedbackImg,
+      name: "Customer's name 4",
+    },
+    {
+      rating: 5,
+      text: "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+      img: feedbackImg,
+      name: "Customer's name 5",
+    },
   ];
+
   return (
     <FeedbackContainer>
       <FeedbackTitle>Что о нас говорят клиенты</FeedbackTitle>

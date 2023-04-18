@@ -141,7 +141,11 @@ export const FeedbackButtonWrapper = styled.div`
   }
 `;
 
-export const FeedbackButton = styled.button``;
+export const FeedbackButton = styled.button`
+  @media (min-width: ${size.desktop}) {
+    cursor: pointer;
+  }
+`;
 
 export const FeedbackButtonImg = styled.img`
   background-color: white;
